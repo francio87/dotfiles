@@ -8,3 +8,4 @@ call plug#end()
 
 autocmd vimenter * colorscheme gruvbox
 set background=dark
+

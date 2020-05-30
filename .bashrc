@@ -25,6 +25,6 @@ HISTCONTROL=ignoredups
 
 # User specific aliases and functions
 alias ll='ls -hal'
-alias ssc='~/.script/ssc.sh'
+alias ssc='~/.scripts/ssc.sh'
 alias nano='vim'
 alias dotcfg='/usr/bin/git --git-dir=/home/dav/.cfgz/ --work-tree=/home/dav'
