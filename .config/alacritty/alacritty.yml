@@ -1,16 +1,16 @@
 # Window Customization
 window:
   dimensions:
-    columns: 140
+    columns: 150
     lines: 38
   padding:
-    x: 10
-    y: 10
+    x: 5
+    y: 5
   decorations: none
 scrolling:
   history: 10000
   multiplier: 3
-background_opacity: .9
+background_opacity: .95 
 dynamic_title: true
 
 # Font Customization
@@ -24,7 +24,7 @@ font:
   italic:
     family: Hack 
     style: Italic
-  size: 8
+  size: 13
   offset:
     x: 0
     y: 0
@@ -36,12 +36,16 @@ font:
     persistent_logging: false
 draw_bold_text_with_bright_colors: true
 
-# Color Settings (Gruvbox)
+# Colors (Gruvbox dark)
 colors:
+  # Default colors
   primary:
-    background: '#1d2021'
+    # hard contrast: background = '#1d2021'
+    background: '#282828'
+    # soft contrast: background = '#32302f'
     foreground: '#ebdbb2'
 
+  # Normal colors
   normal:
     black:   '#282828'
     red:     '#cc241d'
@@ -52,6 +56,7 @@ colors:
     cyan:    '#689d6a'
     white:   '#a89984'
 
+  # Bright colors
   bright:
     black:   '#928374'
     red:     '#fb4934'
@@ -71,4 +76,4 @@ cursor:
   unfocused_hollow: true
 
 key_bindings:
-  - { key: N, mods: Control, action: SpawnNewInstance }
+  - { key: N, mods: Control|Shift, action: SpawnNewInstance }

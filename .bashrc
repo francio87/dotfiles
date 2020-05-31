@@ -24,7 +24,8 @@ HISTSIZE= HISTFILESIZE= # HIST infinita
 HISTCONTROL=ignoredups
 
 # User specific aliases and functions
-alias ll='ls -hal'
+alias ll='ls --color=auto -hal'
+alias ls='ls --color=auto'
 alias ssc='~/.scripts/ssc.sh'
 alias nano='vim'
 alias dotcfg='/usr/bin/git --git-dir=/home/dav/.cfgz/ --work-tree=/home/dav'
