@@ -22,6 +22,6 @@ HISTCONTROL=ignoredups
 # User specific aliases and functions
 alias ll='ls --color=auto -hal'
 alias ls='ls --color=auto'
-alias ssc='~/.scripts/ssc.sh'
+alias ssc='~/.config/scripts/ssc.sh'
 alias nano='vim'
 #alias dotconf='/usr/bin/git --git-dir=/home/dav/.cfg/ --work-tree=/home/dav'

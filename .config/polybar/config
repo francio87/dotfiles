@@ -44,9 +44,9 @@ font-3 = Font Awesome 5 Free:pixelsize=12;2
 font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
 font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
-modules-left = bspwm cpu memory filesystem
+modules-left = bspwm
 modules-center = xwindow date 
-modules-right = filesystem pulseaudio xkeyboard eth battery temperature powermenu
+modules-right = cpu memory pulseaudio xkeyboard eth battery temperature powermenu
 
 separator = |
 tray-position = right
@@ -407,7 +407,6 @@ expand-right = true
 format-spacing = 1
 
 label-open =  
-;
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
@@ -422,6 +421,8 @@ menu-0-1-exec = systemctl poweroff
 
 [bar/secondario]
 ;monitor = ${env:MONITOR:HDMI-1}
+
+enable-ipc = true
 monitor = ${env:MONITOR:DVI-0}
 width = 100%
 height = 15 
@@ -458,17 +459,17 @@ modules-center = xwindow
 modules-right = filesystem pulseaudio xkeyboard memory cpu eth battery temperature date powermenu
 
 separator = |
-tray-position = right
-tray-padding = 2
+;tray-position = right
+;tray-padding = 2
 ;tray-background = #0063ff
 
-;wm-restack = bspwm
+wm-restack = bspwm
 ;wm-restack = i3
 
 ;override-redirect = true
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
 
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
