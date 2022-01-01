@@ -1,9 +1,25 @@
-[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-background-color='rgb(38,37,37)'
-background-transparency-percent=3
-default-size-columns=100
-font='Hack 14'
-foreground-color='rgb(211,215,207)'
-use-system-font=false
+[legacy/profiles:]
+default='435e6986-ac74-4b66-98c8-d4e4835a8853'
+list=['0548b175-7a6f-41ab-910c-d62cf7201a21', '435e6986-ac74-4b66-98c8-d4e4835a8853']
+
+[legacy/profiles:/:0548b175-7a6f-41ab-910c-d62cf7201a21]
+bold-color-same-as-fg=true
+bold-is-bright=false
+cursor-colors-set=false
+default-size-columns=110
+font='Ubuntu Mono 16'
+highlight-colors-set=false
+scrollback-unlimited=true
 use-theme-colors=false
-use-transparent-background=true
+visible-name='Backup'
+
+[legacy/profiles:/:435e6986-ac74-4b66-98c8-d4e4835a8853]
+bold-color-same-as-fg=true
+bold-is-bright=false
+cursor-colors-set=false
+default-size-columns=110
+font='Ubuntu Mono 16'
+highlight-colors-set=false
+scrollback-unlimited=true
+use-theme-colors=false
+visible-name='Francio'

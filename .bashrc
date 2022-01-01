@@ -91,13 +91,16 @@ fi
 
 unset use_color safe_term match_lhs sh
 
-alias ssc='~/.config/scripts/ssc.sh'
-alias ll='ls -hal'
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
+
+#Custom alias
+
+alias ssc='~/.config/scripts/ssc.sh'
+alias ll='ls -hal'
 
 xhost +local:root > /dev/null 2>&1
 
@@ -113,6 +116,8 @@ shopt -s expand_aliases
 # export QT_SELECT=4
 
 # Enable history appending instead of overwriting.  #139609
+
+# Infinite history 
 
 HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
