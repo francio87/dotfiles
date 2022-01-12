@@ -50,6 +50,7 @@ use_color=true
 # instead of using /etc/DIR_COLORS.  Try to use the external file
 # first to take advantage of user additions.  Use internal bash
 # globbing instead of external grep binary.
+
 safe_term=${TERM//[^[:alnum:]]/?}   # sanitize TERM
 match_lhs=""
 [[ -f ~/.dir_colors   ]] && match_lhs="${match_lhs}$(<~/.dir_colors)"
@@ -91,7 +92,7 @@ fi
 
 unset use_color safe_term match_lhs sh
 
-alias ssc='~/.config/scripts/ssc.sh'
+alias ssc='~/.config/scripts/ssc.sh'      # alias ssc
 alias ll='ls -hal'
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
